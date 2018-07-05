@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--This is a generated file. Do not alter this file!-->
+<java xmlns="http://openoffice.org/2004/java/framework/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <enabled xsi:nil="true" />
+    <userClassPath xsi:nil="true" />
+    <vmParameters xsi:nil="true" />
+    <jreLocations xsi:nil="false">
+        <location>file:///C:/users/pmc/My%20Documents/LibreOfficePortable/Java</location>
+    </jreLocations>
+    <javaInfo xsi:nil="false" vendorUpdate="2013-05-02" autoSelect="false">
+        <vendor>Oracle Corporation</vendor>
+        <location>Z:\home\pmc\Documents\CommonFiles\Java</location>
+        <version>1.8.0_171</version>
+        <features>0</features>
+        <requirements>0</requirements>
+        <vendorData>660069006C0065003A002F002F002F0043003A002F00750073006500720073002F0070006D0063002F004D00790025003200300044006F00630075006D0065006E00740073002F004C0069006200720065004F006600660069006300650050006F0072007400610062006C0065002F004A006100760061002F00620069006E002F0063006C00690065006E0074002F006A0076006D002E0064006C006C00</vendorData>
+    </javaInfo>
+</java>
