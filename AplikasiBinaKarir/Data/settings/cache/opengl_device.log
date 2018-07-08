@@ -1,8 +1,8 @@
-DriverVersion: 
-DriverDate: 
-DeviceID: 
-AdapterVendorID: 
-AdapterDeviceID: 
-AdapterSubsysID: 
-DeviceKey: 
-DeviceString: 
+DriverVersion: 5.2.12.0
+DriverDate: 5-9-2018
+DeviceID: PCI\VEN_80EE&DEV_BEEF&SUBSYS_00000000&REV_00
+AdapterVendorID: 0x80ee
+AdapterDeviceID: 0xbeef
+AdapterSubsysID: 0x00000000
+DeviceKey: System\CurrentControlSet\Control\Video\{D4503D3C-1049-412C-8CA8-3368C50C13F6}\0000
+DeviceString: VirtualBox Graphics Adapter
