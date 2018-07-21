@@ -9,7 +9,7 @@
     </jreLocations>
     <javaInfo xsi:nil="false" vendorUpdate="2013-05-02" autoSelect="false">
         <vendor>Oracle Corporation</vendor>
-        <location>F:\Projects\macrolibre\CommonFiles\Java</location>
+        <location>Z:\home\pmc\Projects\macrolibre\CommonFiles\Java</location>
         <version>1.8.0_171</version>
         <features>0</features>
         <requirements>0</requirements>
