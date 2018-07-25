@@ -1,64 +1,22 @@
 ###### Progress log entry 2018-05-17 00:26:12 ######
 ###### Progress log entry 2018-05-17 00:26:33 ######
-###### Progress log entry 2018-07-03 15:45:55 ######
-###### Progress log entry 2018-07-08 07:12:41 ######
-###### Progress log entry 2018-07-08 07:26:48 ######
-###### Progress log entry 2018-07-08 07:28:23 ######
-###### Progress log entry 2018-07-08 07:28:54 ######
-###### Progress log entry 2018-07-08 11:40:31 ######
-###### Progress log entry 2018-07-08 11:43:08 ######
-###### Progress log entry 2018-07-08 11:43:28 ######
-###### Progress log entry 2018-07-07 21:48:45 ######
-###### Progress log entry 2018-07-09 06:09:40 ######
-###### Progress log entry 2018-07-09 06:12:23 ######
-###### Progress log entry 2018-07-09 06:13:18 ######
-###### Progress log entry 2018-07-22 10:45:34 ######
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @4d08d88 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @4d08d88 } }, ArgumentPosition = (short) -1 }
-###### Progress log entry 2018-07-22 10:46:08 ######
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @149ff678 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @149ff678 } }, ArgumentPosition = (short) -1 }
-###### Progress log entry 2018-07-22 10:46:49 ######
-###### Progress log entry 2018-07-22 12:20:12 ######
-###### Progress log entry 2018-07-22 12:21:49 ######
-###### Progress log entry 2018-07-22 13:28:50 ######
-###### Progress log entry 2018-07-22 13:34:08 ######
-###### Progress log entry 2018-07-22 14:07:54 ######
-###### Progress log entry 2018-07-22 14:12:58 ######
-###### Progress log entry 2018-07-22 14:23:22 ######
-###### Progress log entry 2018-07-22 15:20:45 ######
-###### Progress log entry 2018-07-22 15:21:44 ######
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @69a6800 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @69a6800 } }, ArgumentPosition = (short) -1 }
+###### Progress log entry 2018-07-02 10:14:26 ######
+###### Progress log entry 2018-07-02 10:14:54 ######
+###### Progress log entry 2018-07-17 13:09:28 ######
+###### Progress log entry 2018-07-17 13:13:01 ######
+###### Progress log entry 2018-07-17 13:13:57 ######
+###### Progress log entry 2018-07-17 13:24:42 ######
+###### Progress log entry 2018-07-17 13:33:12 ######
+###### Progress log entry 2018-07-17 13:33:31 ######
+###### Progress log entry 2018-07-17 13:54:50 ######
+###### Progress log entry 2018-07-23 12:43:13 ######
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @fa40218 } }, ArgumentPosition = (short) -1 }
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @fa40218 } }, ArgumentPosition = (short) -1 }
 Copying: CoreCode.oxt
-###### Progress log entry 2018-07-22 15:22:31 ######
-###### Progress log entry 2018-07-22 15:24:16 ######
-Copying: CoreCode.oxt
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @1751aad0 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @1751aad0 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @1751aad0 } }, ArgumentPosition = (short) -1 }
-Copying: CoreCode.oxt
-###### Progress log entry 2018-07-22 15:34:19 ######
-###### Progress log entry 2018-07-22 16:04:49 ######
-###### Progress log entry 2018-07-22 16:05:18 ######
-###### Progress log entry 2018-07-22 16:11:34 ######
-###### Progress log entry 2018-07-22 16:11:43 ######
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @15bdf690 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @15bdf690 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @15bdf690 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @15bdf690 } }, ArgumentPosition = (short) -1 }
-Copying: CoreCode.oxt
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @15bdf690 } }, ArgumentPosition = (short) -1 }
-###### Progress log entry 2018-07-22 16:23:15 ######
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @4c5be80 } }, ArgumentPosition = (short) -1 }
-ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: org.openoffice.legacy.CoreCode.oxt", Context = (com.sun.star.uno.XInterface) @4c5be80 } }, ArgumentPosition = (short) -1 }
-Copying: CoreCode.oxt
-###### Progress log entry 2018-07-22 16:23:56 ######
-###### Progress log entry 2018-07-22 16:27:11 ######
-Copying: CoreCode.oxt
-###### Progress log entry 2018-07-22 16:54:50 ######
-Copying: CoreCode.oxt
-###### Progress log entry 2018-07-22 21:04:23 ######
-Copying: CoreCode.oxt
-###### Progress log entry 2018-07-25 08:53:51 ######
-###### Progress log entry 2018-07-25 08:54:37 ######
+###### Progress log entry 2018-07-23 12:44:33 ######
+###### Progress log entry 2018-07-23 12:48:46 ######
+###### Progress log entry 2018-07-23 13:06:11 ######
+###### Progress log entry 2018-07-23 13:08:18 ######
+###### Progress log entry 2018-07-25 07:01:29 ######
+###### Progress log entry 2018-07-25 09:08:20 ######
+###### Progress log entry 2018-07-25 09:08:34 ######

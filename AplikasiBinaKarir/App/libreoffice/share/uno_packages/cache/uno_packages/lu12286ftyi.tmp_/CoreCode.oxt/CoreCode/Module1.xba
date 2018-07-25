@@ -699,6 +699,18 @@ Sub hideallBars_inOOo2( )
     lmgr = frame.LayoutManager
     lmgr.setVisible(False)
     Thiscomponent.currentcontroller.ColumnRowHeaders = False
+    Thiscomponent.currentcontroller.sheettabs = False
+
+End Sub
+
+Sub showallBars_inOOo2( )
+
+    doc = ThisComponent
+    frame = doc.CurrentController.Frame
+    lmgr = frame.LayoutManager
+    lmgr.setVisible(True)
+    Thiscomponent.currentcontroller.ColumnRowHeaders = False
+    Thiscomponent.currentcontroller.sheettabs = True
 
 End Sub
 </script:module>
