@@ -1,13 +1,9 @@
-DriverVersion: 
-DriverDate: 
-DeviceID: 
-AdapterVendorID: 
-AdapterDeviceID: 
-AdapterSubsysID: 
-DeviceKey: 
-DeviceString: 
-ee
-AdapterDeviceID: 0xbeef
-AdapterSubsysID: 0x00000000
-DeviceKey: System\CurrentControlSet\Control\Video\{D4503D3C-1049-412C-8CA8-3368C50C13F6}\0000
-DeviceString: VirtualBox Graphics Adapter
+DriverVersion: 21.20.16.4550
+DriverDate: 11-11-2016
+DeviceID: PCI\VEN_8086&DEV_1921&SUBSYS_39FD17AA&REV_0A
+AdapterVendorID: 0x8086
+AdapterDeviceID: 0x1921
+AdapterSubsysID: 0x39fd17aa
+DeviceKey: System\CurrentControlSet\Control\Video\{D7BBC915-024E-11E8-B72F-A7140B5DE1CF}\0000
+DeviceString: Intel(R) HD Graphics 520
+Adapter

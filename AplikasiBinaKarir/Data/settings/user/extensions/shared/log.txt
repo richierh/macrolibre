@@ -60,3 +60,5 @@ Copying: CoreCode.oxt
 Copying: CoreCode.oxt
 ###### Progress log entry 2018-07-22 21:04:23 ######
 Copying: CoreCode.oxt
+###### Progress log entry 2018-07-25 08:53:51 ######
+###### Progress log entry 2018-07-25 08:54:37 ######
