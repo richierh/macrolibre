@@ -1,8 +1,0 @@
-DriverVersion: 21.20.16.4550
-DriverDate: 11-11-2016
-DeviceID: PCI\VEN_8086&DEV_1921&SUBSYS_39FD17AA&REV_0A
-AdapterVendorID: 0x8086
-AdapterDeviceID: 0x1921
-AdapterSubsysID: 0x39fd17aa
-DeviceKey: System\CurrentControlSet\Control\Video\{D7BBC915-024E-11E8-B72F-A7140B5DE1CF}\0000
-DeviceString: Intel(R) HD Graphics 520
