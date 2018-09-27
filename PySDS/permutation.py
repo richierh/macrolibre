@@ -1,3 +1,3 @@
 import itertools
-k = list(itertools.permutations([1, 2, 3]))
+k = list(itertools.permutations(["R", "I", "A"]))
 print (k)

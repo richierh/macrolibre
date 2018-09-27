@@ -2,6 +2,7 @@
 import os
 import sys
 from oscheck import *
+import wx
 
 path = "{}{}".format(os.getcwd(),"/AppsSDS")
 sys.path.append(path)

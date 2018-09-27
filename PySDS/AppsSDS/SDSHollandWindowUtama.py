@@ -18,10 +18,10 @@ class SDSHollandWindowUtama( sds.WindowUtama ):
 
 	def btn_gotopage2( self, event ):
 		# TODO: Implement btn_gotopage2
-		from SDSHollandPage3 import SDSHollandPage3
+		#from SDSHollandPage3 import SDSHollandPage3
 		#SDSHollandPage2(self)
-		self.SetScrollbar(1,1,400,300)
-		SDSHollandPage3.m_scrollBar1OnScroll(self,event)
+
+
 		self.m_panel10.Hide()
 		self.m_panel2.Show()
 		#SDSHollandPage3(self)

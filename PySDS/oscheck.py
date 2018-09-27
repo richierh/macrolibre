@@ -12,3 +12,4 @@ elif platform == "Windows" :
 	paths = "\Apps"
 else :
 	print ("Sistem Operasi Lainnya")
+	pass

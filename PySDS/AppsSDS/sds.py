@@ -140,9 +140,28 @@ class WindowUtama ( main ):
 		bSizer10.Fit( self.m_panel10 )
 		bSizer101.Add( self.m_panel10, 5, wx.ALL|wx.EXPAND, 5 )
 
-		self.m_panel2 = Page3( self.m_panel1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		self.m_panel2 = wx.Panel( self.m_panel1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		self.m_panel2.Hide()
 
+		bSizer15 = wx.BoxSizer( wx.VERTICAL )
+
+		self.m_scrolledWindow1 = wx.ScrolledWindow( self.m_panel2, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.HSCROLL|wx.VSCROLL )
+		self.m_scrolledWindow1.SetScrollRate( 5, 5 )
+		bSizer16 = wx.BoxSizer( wx.VERTICAL )
+
+		self.m_panel61 = Page3( self.m_scrolledWindow1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		bSizer16.Add( self.m_panel61, 1, wx.EXPAND |wx.ALL, 5 )
+
+
+		self.m_scrolledWindow1.SetSizer( bSizer16 )
+		self.m_scrolledWindow1.Layout()
+		bSizer16.Fit( self.m_scrolledWindow1 )
+		bSizer15.Add( self.m_scrolledWindow1, 1, wx.EXPAND |wx.ALL, 5 )
+
+
+		self.m_panel2.SetSizer( bSizer15 )
+		self.m_panel2.Layout()
+		bSizer15.Fit( self.m_panel2 )
 		bSizer101.Add( self.m_panel2, 5, wx.EXPAND |wx.ALL, 5 )
 
 
@@ -1352,29 +1371,15 @@ class Page3 ( wx.Panel ):
 
 		bSizer8.Add( bSizer95, 1, wx.EXPAND, 5 )
 
-		self.m_scrollBar1 = wx.ScrollBar( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SB_VERTICAL )
-		bSizer8.Add( self.m_scrollBar1, 0, wx.ALL|wx.EXPAND, 5 )
-
 
 		bSizer16.Add( bSizer8, 1, wx.EXPAND, 5 )
-
-		self.m_scrollBar2 = wx.ScrollBar( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SB_HORIZONTAL )
-		bSizer16.Add( self.m_scrollBar2, 0, wx.ALL|wx.EXPAND, 5 )
 
 
 		self.SetSizer( bSizer16 )
 		self.Layout()
 
-		# Connect Events
-		self.m_scrollBar1.Bind( wx.EVT_SCROLL, self.m_scrollBar1OnScroll )
-
 	def __del__( self ):
 		pass
-
-
-	# Virtual event handlers, overide them in your derived class
-	def m_scrollBar1OnScroll( self, event ):
-		event.Skip()
 
 
 ###########################################################################

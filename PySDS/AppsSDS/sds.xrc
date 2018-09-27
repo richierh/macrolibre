@@ -236,9 +236,32 @@
 					<option>5</option>
 					<flag>wxEXPAND | wxALL</flag>
 					<border>5</border>
-					<object class="wxPanel" name="m_panel2" subclass="Page3">
+					<object class="wxPanel" name="m_panel2">
 						<style>wxTAB_TRAVERSAL</style>
 						<hidden>1</hidden>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxEXPAND | wxALL</flag>
+								<border>5</border>
+								<object class="wxScrolledWindow" name="m_scrolledWindow1">
+									<style>wxHSCROLL|wxVSCROLL</style>
+									<scrollrate>5,5</scrollrate>
+									<object class="wxBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND | wxALL</flag>
+											<border>5</border>
+											<object class="wxPanel" name="m_panel61" subclass="Page3">
+												<style>wxTAB_TRAVERSAL</style>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
 					</object>
 				</object>
 			</object>
@@ -2873,30 +2896,6 @@
 							</object>
 						</object>
 					</object>
-					<object class="sizeritem">
-						<option>0</option>
-						<flag>wxALL|wxEXPAND</flag>
-						<border>5</border>
-						<object class="wxScrollBar" name="m_scrollBar1">
-							<style>wxSB_VERTICAL</style>
-							<value>0</value>
-							<thumbsize>50</thumbsize>
-							<range>100</range>
-							<pagesize>5</pagesize>
-						</object>
-					</object>
-				</object>
-			</object>
-			<object class="sizeritem">
-				<option>0</option>
-				<flag>wxALL|wxEXPAND</flag>
-				<border>5</border>
-				<object class="wxScrollBar" name="m_scrollBar2">
-					<style>wxSB_HORIZONTAL</style>
-					<value>0</value>
-					<thumbsize>1</thumbsize>
-					<range>100</range>
-					<pagesize>1</pagesize>
 				</object>
 			</object>
 		</object>
