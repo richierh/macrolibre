@@ -14,3 +14,4 @@ os.chdir(cd)
 from main import run
 
 
+#menjalankan aplikasi
