@@ -9,6 +9,7 @@
 
 import wx
 import wx.xrc
+myimage = u"img/binakarir2.png"
 import wx.adv
 
 ###########################################################################
@@ -18,20 +19,24 @@ import wx.adv
 class IntiWindow ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"BinaKarir", pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.CAPTION|wx.CLOSE_BOX|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL, name = u"IntiWindow" )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"BinaKarir", pos = wx.DefaultPosition, size = wx.Size( 300,300 ), style = wx.CAPTION|wx.CLOSE_BOX|wx.TAB_TRAVERSAL, name = u"IntiWindow" )
 
 		self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 
 		bSizer1 = wx.BoxSizer( wx.VERTICAL )
 
-		self.m_panel1 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 500,300 ), wx.TAB_TRAVERSAL )
+		self.m_panel1 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 400,300 ), wx.TAB_TRAVERSAL )
 		bSizer3 = wx.BoxSizer( wx.VERTICAL )
 
-		self.m_bitmap1 = wx.StaticBitmap( self.m_panel1, wx.ID_ANY, wx.Bitmap( u"../../PySDS/Aplc/img/binakarir.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0, u"LogoBinaKarir" )
-		bSizer3.Add( self.m_bitmap1, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		self.start_image = wx.Image(myimage)
+		self.start_image.Rescale(250, 100)
+		self.image = wx.BitmapFromImage(self.start_image)
 
-		self.m_button1 = wx.Button( self.m_panel1, wx.ID_ANY, u"Lanjut", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer3.Add( self.m_button1, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		self.mypic = wx.StaticBitmap(self, -1, self.image, 	wx.DefaultPosition, style=wx.BITMAP_TYPE_PNG)
+		bSizer3.Add( self.mypic, 1, wx.ALL|wx.EXPAND, 5 )
+
+		self.m_button1 = wx.Button( self.m_panel1, wx.ID_ANY, u"Lanjut", wx.Point( -1,-1 ), wx.Size( -1,-1 ), 0 )
+		bSizer3.Add( self.m_button1, 1, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
 		bSizer4 = wx.BoxSizer( wx.HORIZONTAL )
 
@@ -47,7 +52,7 @@ class IntiWindow ( wx.Frame ):
 
 		self.m_panel1.SetSizer( bSizer3 )
 		self.m_panel1.Layout()
-		bSizer1.Add( self.m_panel1, 0, wx.ALL, 5 )
+		bSizer1.Add( self.m_panel1, 1, wx.ALL|wx.EXPAND, 5 )
 
 
 		self.SetSizer( bSizer1 )
@@ -78,7 +83,7 @@ class IntiWindow ( wx.Frame ):
 class Konfigurasi ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"BinaKarir", pos = wx.DefaultPosition, size = wx.Size( 400,300 ), style = 0|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"BinaKarir", pos = wx.DefaultPosition, size = wx.Size( 400,300 ), style = wx.FRAME_NO_TASKBAR|wx.STAY_ON_TOP|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 
@@ -94,10 +99,7 @@ class Konfigurasi ( wx.Frame ):
 
 		bSizer8.Add( self.m_staticText1, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
-		self.m_splitter1 = wx.SplitterWindow( self.m_panel4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SP_3D )
-		self.m_splitter1.Bind( wx.EVT_IDLE, self.m_splitter1OnIdle )
-
-		self.m_panel5 = wx.Panel( self.m_splitter1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		self.m_panel5 = wx.Panel( self.m_panel4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		fgSizer3 = wx.FlexGridSizer( 0, 3, 0, 0 )
 		fgSizer3.AddGrowableCol( 1 )
 		fgSizer3.SetFlexibleDirection( wx.BOTH )
@@ -111,10 +113,10 @@ class Konfigurasi ( wx.Frame ):
 		self.m_datePicker1 = wx.adv.DatePickerCtrl( self.m_panel5, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.DefaultSize, wx.adv.DP_DEFAULT )
 		fgSizer3.Add( self.m_datePicker1, 0, wx.ALL, 5 )
 
-		self.m_staticText51 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText51 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"Tanggal Aktif SD", wx.DefaultPosition, wx.Size( 125,-1 ), 0 )
 		self.m_staticText51.Wrap( -1 )
 
-		fgSizer3.Add( self.m_staticText51, 0, wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
+		fgSizer3.Add( self.m_staticText51, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
 		self.m_staticText3 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"Password", wx.Point( -1,-1 ), wx.Size( -1,-1 ), 0 )
 		self.m_staticText3.Wrap( -1 )
@@ -136,28 +138,27 @@ class Konfigurasi ( wx.Frame ):
 		fgSizer3.Add( self.m_textCtrl5, 0, wx.ALL|wx.EXPAND, 5 )
 
 		self.m_button61 = wx.Button( self.m_panel5, wx.ID_ANY, u"Ubah", wx.DefaultPosition, wx.DefaultSize, 0 )
-		fgSizer3.Add( self.m_button61, 0, wx.ALL, 5 )
+		fgSizer3.Add( self.m_button61, 0, wx.ALL|wx.ALIGN_RIGHT, 5 )
 
 
 		self.m_panel5.SetSizer( fgSizer3 )
 		self.m_panel5.Layout()
 		fgSizer3.Fit( self.m_panel5 )
-		self.m_splitter1.Initialize( self.m_panel5 )
-		bSizer8.Add( self.m_splitter1, 1, wx.EXPAND|wx.LEFT, 5 )
+		bSizer8.Add( self.m_panel5, 1, wx.EXPAND |wx.ALL, 5 )
 
 		bSizer15 = wx.BoxSizer( wx.HORIZONTAL )
 
 		self.m_button6 = wx.Button( self.m_panel4, wx.ID_ANY, u"Non Aktifkan", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer15.Add( self.m_button6, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-
-		bSizer15.Add( ( 100, 0), 1, wx.EXPAND, 5 )
-
 		self.m_button7 = wx.Button( self.m_panel4, wx.ID_ANY, u"Aktifkan", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer15.Add( self.m_button7, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 
 
-		bSizer8.Add( bSizer15, 1, wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		bSizer15.Add( ( 150, 0), 1, 0, 5 )
+
+
+		bSizer8.Add( bSizer15, 0, wx.ALIGN_CENTER_HORIZONTAL|wx.EXPAND, 5 )
 
 		m_sdbSizer1 = wx.StdDialogButtonSizer()
 		self.m_sdbSizer1OK = wx.Button( self.m_panel4, wx.ID_OK )
@@ -166,7 +167,7 @@ class Konfigurasi ( wx.Frame ):
 		m_sdbSizer1.AddButton( self.m_sdbSizer1Cancel )
 		m_sdbSizer1.Realize();
 
-		bSizer8.Add( m_sdbSizer1, 1, wx.EXPAND, 5 )
+		bSizer8.Add( m_sdbSizer1, 0, wx.EXPAND, 5 )
 
 
 		self.m_panel4.SetSizer( bSizer8 )
@@ -181,23 +182,31 @@ class Konfigurasi ( wx.Frame ):
 		self.Centre( wx.BOTH )
 
 		# Connect Events
+		self.m_button61.Bind( wx.EVT_BUTTON, self.btn_ubah )
+		self.m_button6.Bind( wx.EVT_BUTTON, self.btn_non_aktifkan )
+		self.m_button7.Bind( wx.EVT_BUTTON, self.btn_aktifkan )
+		self.m_sdbSizer1Cancel.Bind( wx.EVT_BUTTON, self.btn_cancel )
 		self.m_sdbSizer1OK.Bind( wx.EVT_BUTTON, self.btn_lanjut )
-		self.m_sdbSizer1Yes.Bind( wx.EVT_BUTTON, self.btn_cancel )
 
 	def __del__( self ):
 		pass
 
 
 	# Virtual event handlers, overide them in your derived class
-	def btn_lanjut( self, event ):
+	def btn_ubah( self, event ):
+		event.Skip()
+
+	def btn_non_aktifkan( self, event ):
+		event.Skip()
+
+	def btn_aktifkan( self, event ):
 		event.Skip()
 
 	def btn_cancel( self, event ):
 		event.Skip()
 
-	def m_splitter1OnIdle( self, event ):
-		self.m_splitter1.SetSashPosition( 0 )
-		self.m_splitter1.Unbind( wx.EVT_IDLE )
+	def btn_lanjut( self, event ):
+		event.Skip()
 
 
 ###########################################################################
@@ -207,7 +216,7 @@ class Konfigurasi ( wx.Frame ):
 class DialogPasswd ( wx.Dialog ):
 
 	def __init__( self, parent ):
-		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"BinaKarir", pos = wx.DefaultPosition, size = wx.Size( 300,100 ), style = wx.DEFAULT_DIALOG_STYLE )
+		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"BinaKarir", pos = wx.DefaultPosition, size = wx.Size( 300,100 ), style = wx.DEFAULT_DIALOG_STYLE|wx.STAY_ON_TOP )
 
 		self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 

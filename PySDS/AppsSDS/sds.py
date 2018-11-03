@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 
 ###########################################################################
-## Python code generated with wxFormBuilder (version Sep 17 2018)
+## Python code generated with wxFormBuilder (version Oct 29 2018)
 ## http://www.wxformbuilder.org/
 ##
 ## PLEASE DO *NOT* EDIT THIS FILE!
 ###########################################################################
 
-from style import main
+from AppsSDS.style import main
 import wx
 import wx.xrc
+import wx.adv
 import wx.grid
 
 ###########################################################################
@@ -19,7 +20,7 @@ import wx.grid
 class WindowUtama ( main ):
 
 	def __init__( self, parent ):
-		main.__init__ ( self, parent, id = wx.ID_ANY, title = u"BINAKARIR", pos = wx.DefaultPosition, size = wx.Size( 1000,500 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		main.__init__ ( self, parent, id = wx.ID_ANY, title = u"BINAKARIR", pos = wx.DefaultPosition, size = wx.Size( 1000,1000 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHints( wx.Size( 1000,500 ), wx.DefaultSize )
 
@@ -28,67 +29,230 @@ class WindowUtama ( main ):
 		self.m_panel1 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer101 = wx.BoxSizer( wx.VERTICAL )
 
+		self.m_panel101 = wx.Panel( self.m_panel1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		fgSizer13 = wx.FlexGridSizer( 0, 2, 0, 0 )
+		fgSizer13.SetFlexibleDirection( wx.BOTH )
+		fgSizer13.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
+
+		self.m_radioBtn1 = wx.RadioButton( self.m_panel101, wx.ID_ANY, u"Tes Seleksi", wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer13.Add( self.m_radioBtn1, 0, wx.ALL, 5 )
+
+		self.m_radioBtn2 = wx.RadioButton( self.m_panel101, wx.ID_ANY, u"Tes", wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer13.Add( self.m_radioBtn2, 0, wx.ALL, 5 )
+
+
+		self.m_panel101.SetSizer( fgSizer13 )
+		self.m_panel101.Layout()
+		fgSizer13.Fit( self.m_panel101 )
+		bSizer101.Add( self.m_panel101, 0, wx.ALL|wx.EXPAND, 5 )
+
 		self.m_panel6 = wx.Panel( self.m_panel1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-		fgSizer4 = wx.FlexGridSizer( 3, 4, 0, 0 )
+		fgSizer14 = wx.FlexGridSizer( 0, 2, 0, 0 )
+		fgSizer14.SetFlexibleDirection( wx.BOTH )
+		fgSizer14.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
+
+		self.m_panel7 = wx.Panel( self.m_panel6, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		fgSizer4 = wx.FlexGridSizer( 11, 2, 0, 0 )
 		fgSizer4.SetFlexibleDirection( wx.BOTH )
 		fgSizer4.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
 
-		self.m_staticText1 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Nama Kandidat", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText1 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"No Tes", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText1.Wrap( -1 )
 
-		fgSizer4.Add( self.m_staticText1, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		fgSizer4.Add( self.m_staticText1, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_textCtrl1 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
+		self.m_textCtrl1 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
 		fgSizer4.Add( self.m_textCtrl1, 0, wx.ALL, 5 )
 
-		self.m_staticText2 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Tanggal Lulus", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText2 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Tanggal Tes", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText2.Wrap( -1 )
 
 		fgSizer4.Add( self.m_staticText2, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_textCtrl2 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		fgSizer4.Add( self.m_textCtrl2, 0, wx.ALL, 5 )
+		self.m_datePicker1 = wx.adv.DatePickerCtrl( self.m_panel7, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.Size( 200,-1 ), wx.adv.DP_DEFAULT )
+		fgSizer4.Add( self.m_datePicker1, 0, wx.ALL, 5 )
 
-		self.m_staticText3 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText3 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Nama Kandidat", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText3.Wrap( -1 )
 
 		fgSizer4.Add( self.m_staticText3, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_textCtrl4 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
+		self.m_textCtrl4 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
 		fgSizer4.Add( self.m_textCtrl4, 0, wx.ALL, 5 )
 
-		self.m_staticText4 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText4 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Jenis Kelamin", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText4.Wrap( -1 )
 
 		fgSizer4.Add( self.m_staticText4, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_textCtrl5 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
+		self.m_textCtrl5 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
 		fgSizer4.Add( self.m_textCtrl5, 0, wx.ALL, 5 )
 
-		self.m_staticText5 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Keterangan", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText5 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Tanggal Lahir", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText5.Wrap( -1 )
 
 		fgSizer4.Add( self.m_staticText5, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_textCtrl3 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
-		fgSizer4.Add( self.m_textCtrl3, 0, wx.ALL, 5 )
+		self.m_datePicker2 = wx.adv.DatePickerCtrl( self.m_panel7, wx.ID_ANY, wx.DefaultDateTime, wx.DefaultPosition, wx.Size( 200,-1 ), wx.adv.DP_DEFAULT )
+		fgSizer4.Add( self.m_datePicker2, 0, wx.ALL, 5 )
+
+		self.m_staticText113 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Pendidikan Terakhir", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText113.Wrap( -1 )
+
+		fgSizer4.Add( self.m_staticText113, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		m_choice1Choices = [ u"SD", u"SMP", u"SMA/Sederajat", u"S1", u"S2", u"S3" ]
+		self.m_choice1 = wx.Choice( self.m_panel7, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_choice1Choices, 0 )
+		self.m_choice1.SetSelection( 5 )
+		fgSizer4.Add( self.m_choice1, 0, wx.ALL, 5 )
+
+		self.m_staticText114 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Jurusan", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText114.Wrap( -1 )
+
+		fgSizer4.Add( self.m_staticText114, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl10 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer4.Add( self.m_textCtrl10, 0, wx.ALL, 5 )
+
+		self.m_staticText115 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Kota", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText115.Wrap( -1 )
+
+		fgSizer4.Add( self.m_staticText115, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl11 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer4.Add( self.m_textCtrl11, 0, wx.ALL, 5 )
+
+		self.m_staticText116 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Perusahaan/Instansi", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText116.Wrap( -1 )
+
+		fgSizer4.Add( self.m_staticText116, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl12 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer4.Add( self.m_textCtrl12, 0, wx.ALL, 5 )
+
+		self.m_staticText117 = wx.StaticText( self.m_panel7, wx.ID_ANY, u"Posisi/Jabatan", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText117.Wrap( -1 )
+
+		fgSizer4.Add( self.m_staticText117, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl221 = wx.TextCtrl( self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer4.Add( self.m_textCtrl221, 0, wx.ALL, 5 )
 
 
-		self.m_panel6.SetSizer( fgSizer4 )
+		self.m_panel7.SetSizer( fgSizer4 )
+		self.m_panel7.Layout()
+		fgSizer4.Fit( self.m_panel7 )
+		fgSizer14.Add( self.m_panel7, 1, wx.ALL|wx.EXPAND, 5 )
+
+		self.m_panel8 = wx.Panel( self.m_panel6, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		self.m_panel8.Hide()
+
+		fgSizer15 = wx.FlexGridSizer( 9, 2, 0, 0 )
+		fgSizer15.AddGrowableCol( 1 )
+		fgSizer15.SetFlexibleDirection( wx.BOTH )
+		fgSizer15.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
+
+		self.m_staticText118 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText118.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText118, 1, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl14 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 300,-1 ), 0 )
+		fgSizer15.Add( self.m_textCtrl14, 0, wx.ALL, 5 )
+
+		self.m_staticText119 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText119.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText119, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl15 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl15, 0, wx.ALL, 5 )
+
+		self.m_staticText120 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText120.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText120, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl16 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl16, 0, wx.ALL, 5 )
+
+		self.m_staticText121 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText121.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText121, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl17 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl17, 0, wx.ALL, 5 )
+
+		self.m_staticText122 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText122.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText122, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl18 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl18, 0, wx.ALL, 5 )
+
+		self.m_staticText123 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText123.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText123, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl19 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl19, 0, wx.ALL, 5 )
+
+		self.m_staticText124 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText124.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText124, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl20 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl20, 0, wx.ALL, 5 )
+
+		self.m_staticText125 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText125.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText125, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl21 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl21, 0, wx.ALL, 5 )
+
+		self.m_staticText126 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"MyLabel", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText126.Wrap( -1 )
+
+		fgSizer15.Add( self.m_staticText126, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
+
+		self.m_textCtrl22 = wx.TextCtrl( self.m_panel8, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer15.Add( self.m_textCtrl22, 0, wx.ALL, 5 )
+
+
+		self.m_panel8.SetSizer( fgSizer15 )
+		self.m_panel8.Layout()
+		fgSizer15.Fit( self.m_panel8 )
+		fgSizer14.Add( self.m_panel8, 1, wx.EXPAND |wx.ALL, 5 )
+
+
+		self.m_panel6.SetSizer( fgSizer14 )
 		self.m_panel6.Layout()
-		fgSizer4.Fit( self.m_panel6 )
+		fgSizer14.Fit( self.m_panel6 )
 		bSizer101.Add( self.m_panel6, 1, wx.ALL|wx.EXPAND, 5 )
 
 		self.m_panel9 = wx.Panel( self.m_panel1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer5 = wx.BoxSizer( wx.HORIZONTAL )
 
+		self.m_button3 = wx.Button( self.m_panel9, wx.ID_ANY, u"Ke Awal", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button3.Enable( False )
+
+		bSizer5.Add( self.m_button3, 0, wx.ALL|wx.ALIGN_BOTTOM, 5 )
+
 
 		bSizer5.Add( ( 0, 0), 1, wx.EXPAND, 5 )
 
-		self.m_button1 = wx.Button( self.m_panel9, wx.ID_ANY, u"Close", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button1 = wx.Button( self.m_panel9, wx.ID_ANY, u"<Page Sebelumnya", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button1.Enable( False )
+
 		bSizer5.Add( self.m_button1, 0, wx.ALL|wx.ALIGN_BOTTOM, 5 )
 
-		self.m_button2 = wx.Button( self.m_panel9, wx.ID_ANY, u">Page2", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_button2 = wx.Button( self.m_panel9, wx.ID_ANY, u">Page Selanjutnya", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer5.Add( self.m_button2, 0, wx.ALL|wx.ALIGN_BOTTOM, 5 )
 
 
@@ -98,6 +262,8 @@ class WindowUtama ( main ):
 		bSizer101.Add( self.m_panel9, 1, wx.ALL|wx.EXPAND, 5 )
 
 		self.m_panel10 = wx.Panel( self.m_panel1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		self.m_panel10.Hide()
+
 		bSizer10 = wx.BoxSizer( wx.VERTICAL )
 
 		self.m_staticText7 = wx.StaticText( self.m_panel10, wx.ID_ANY, u"OCCUPATIONAL DAYDREAM", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -162,7 +328,7 @@ class WindowUtama ( main ):
 		self.m_panel2.SetSizer( bSizer15 )
 		self.m_panel2.Layout()
 		bSizer15.Fit( self.m_panel2 )
-		bSizer101.Add( self.m_panel2, 5, wx.EXPAND |wx.ALL, 5 )
+		bSizer101.Add( self.m_panel2, 10, wx.EXPAND |wx.ALL, 5 )
 
 
 		self.m_panel1.SetSizer( bSizer101 )
@@ -173,22 +339,60 @@ class WindowUtama ( main ):
 
 		self.SetSizer( bSizer1 )
 		self.Layout()
+		self.m_menubar1 = wx.MenuBar( 0 )
+		self.m_menu2 = wx.Menu()
+		self.m_menuItem3 = wx.MenuItem( self.m_menu2, wx.ID_ANY, u"Database", wx.EmptyString, wx.ITEM_NORMAL )
+		self.m_menu2.Append( self.m_menuItem3 )
+
+		self.m_menuItem2 = wx.MenuItem( self.m_menu2, wx.ID_ANY, u"Tutup Aplikasi", wx.EmptyString, wx.ITEM_NORMAL )
+		self.m_menu2.Append( self.m_menuItem2 )
+
+		self.m_menubar1.Append( self.m_menu2, u"Berkas" )
+
+		self.m_menu21 = wx.Menu()
+		self.m_menuItem31 = wx.MenuItem( self.m_menu21, wx.ID_ANY, u"Tentang Aplikasi", wx.EmptyString, wx.ITEM_NORMAL )
+		self.m_menu21.Append( self.m_menuItem31 )
+
+		self.m_menubar1.Append( self.m_menu21, u"Tentang" )
+
+		self.SetMenuBar( self.m_menubar1 )
+
 
 		self.Centre( wx.BOTH )
 
 		# Connect Events
-		self.m_button1.Bind( wx.EVT_BUTTON, self.btn_Close )
-		self.m_button2.Bind( wx.EVT_BUTTON, self.btn_gotopage2 )
+		self.m_radioBtn1.Bind( wx.EVT_RADIOBUTTON, self.btnradio_formtes )
+		self.m_radioBtn2.Bind( wx.EVT_RADIOBUTTON, self.btnradio_formseleksi )
+		self.m_button3.Bind( wx.EVT_BUTTON, self.btn_kembaliawal )
+		self.m_button1.Bind( wx.EVT_BUTTON, self.btn_balik )
+		self.m_button2.Bind( wx.EVT_BUTTON, self.btn_selanjutnya )
+		self.Bind( wx.EVT_MENU, self.m_btn_tutupaplikasi, id = self.m_menuItem2.GetId() )
+		self.Bind( wx.EVT_MENU, self.m_btn_ttgaplikasi, id = self.m_menuItem31.GetId() )
 
 	def __del__( self ):
 		pass
 
 
 	# Virtual event handlers, overide them in your derived class
-	def btn_Close( self, event ):
+	def btnradio_formtes( self, event ):
 		event.Skip()
 
-	def btn_gotopage2( self, event ):
+	def btnradio_formseleksi( self, event ):
+		event.Skip()
+
+	def btn_kembaliawal( self, event ):
+		event.Skip()
+
+	def btn_balik( self, event ):
+		event.Skip()
+
+	def btn_selanjutnya( self, event ):
+		event.Skip()
+
+	def m_btn_tutupaplikasi( self, event ):
+		event.Skip()
+
+	def m_btn_ttgaplikasi( self, event ):
 		event.Skip()
 
 
