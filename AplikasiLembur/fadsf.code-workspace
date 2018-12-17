@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.pydev.pythonExecutable": ".virtualenvs/MwxProject/bin/python",
+		"python.pydev.pythonPath": [/home/binakarir/Projects/AplikasiLembur]
+	}
+}

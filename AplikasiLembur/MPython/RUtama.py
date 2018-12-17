@@ -5,10 +5,10 @@
 
 import wx
 # begin wxGlade: dependencies
+import wx.propgrid
 # end wxGlade
 
 # begin wxGlade: extracode
-import a
 # end wxGlade
 
 
@@ -17,11 +17,7 @@ class RUtama(wx.Frame):
         # begin wxGlade: RUtama.__init__
         kwds["style"] = kwds.get("style", 0) | wx.DEFAULT_FRAME_STYLE
         wx.Frame.__init__(self, *args, **kwds)
-        self.SetSize((400, 300))
-        self.panel_1 = wx.Panel(self, wx.ID_ANY)
-        import b
-        self.window_1 = ahhjh(self.panel_1, wx.ID_ANY)
-        import c
+        self.SetSize((402, 301))
         
         # Menu Bar
         self.Frame_menubar = wx.MenuBar()
@@ -35,6 +31,18 @@ class RUtama(wx.Frame):
         self.Frame_menubar.Append(wxglade_tmp_menu, "Tentang")
         self.SetMenuBar(self.Frame_menubar)
         # Menu Bar end
+        self.panel_1 = wx.ScrolledWindow(self, wx.ID_ANY, style=wx.TAB_TRAVERSAL)
+        self.text_ctrl_13 = wx.TextCtrl(self.panel_1, wx.ID_ANY, "")
+        self.text_ctrl_10 = wx.TextCtrl(self.panel_1, wx.ID_ANY, "")
+        self.text_ctrl_11 = wx.TextCtrl(self.panel_1, wx.ID_ANY, "")
+        self.choice_7 = wx.Choice(self.panel_1, wx.ID_ANY, choices=["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"])
+        self.choice_8 = wx.Choice(self.panel_1, wx.ID_ANY, choices=["2018"])
+        self.text_ctrl_12 = wx.SearchCtrl(self.panel_1, wx.ID_ANY, "")
+        self.text_ctrl_1 = wx.TextCtrl(self.panel_1, wx.ID_ANY, "")
+        self.text_ctrl_2 = wx.TextCtrl(self.panel_1, wx.ID_ANY, "")
+        self.spin_ctrl_1 = wx.SpinCtrl(self.panel_1, wx.ID_ANY, "0", min=0, max=100)
+        self.property_grid_1 = wx.propgrid.PropertyGridManager(self.panel_1, wx.ID_ANY)
+        self.list_ctrl_1 = wx.ListCtrl(self.panel_1, wx.ID_ANY, style=wx.LC_HRULES | wx.LC_REPORT | wx.LC_VRULES)
 
         self.__set_properties()
         self.__do_layout()
@@ -44,15 +52,47 @@ class RUtama(wx.Frame):
     def __set_properties(self):
         # begin wxGlade: RUtama.__set_properties
         self.SetTitle("Binakarir")
-        self.window_1.SetDasdcv(bb)
+        self.choice_7.SetSelection(0)
+        self.choice_8.SetSelection(0)
+        self.text_ctrl_12.ShowCancelButton(True)
+        self.list_ctrl_1.AppendColumn("A", format=wx.LIST_FORMAT_LEFT, width=-1)
+        self.list_ctrl_1.AppendColumn("B", format=wx.LIST_FORMAT_LEFT, width=-1)
+        self.list_ctrl_1.AppendColumn("C", format=wx.LIST_FORMAT_LEFT, width=-1)
+        self.panel_1.SetScrollRate(10, 10)
         # end wxGlade
 
     def __do_layout(self):
         # begin wxGlade: RUtama.__do_layout
         sizer_1 = wx.BoxSizer(wx.VERTICAL)
-        sizer_2 = wx.BoxSizer(wx.HORIZONTAL)
-        sizer_2.Add(self.window_1, 1, wx.EXPAND, 0)
-        self.panel_1.SetSizer(sizer_2)
+        grid_sizer_4 = wx.FlexGridSizer(10, 2, 0, 0)
+        label_17 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_17")
+        grid_sizer_4.Add(label_17, 0, wx.ALIGN_CENTER, 0)
+        grid_sizer_4.Add(self.text_ctrl_13, 0, 0, 0)
+        label_13 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_13")
+        grid_sizer_4.Add(label_13, 0, wx.ALIGN_CENTER, 0)
+        grid_sizer_4.Add(self.text_ctrl_10, 0, 0, 0)
+        label_14 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_14")
+        grid_sizer_4.Add(label_14, 0, wx.ALIGN_CENTER, 0)
+        grid_sizer_4.Add(self.text_ctrl_11, 0, 0, 0)
+        label_15 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_15")
+        grid_sizer_4.Add(label_15, 0, wx.ALIGN_CENTER, 0)
+        grid_sizer_4.Add(self.choice_7, 0, 0, 0)
+        label_16 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_16")
+        grid_sizer_4.Add(label_16, 0, wx.ALIGN_CENTER, 0)
+        grid_sizer_4.Add(self.choice_8, 0, 0, 0)
+        grid_sizer_4.Add(self.text_ctrl_12, 0, 0, 0)
+        grid_sizer_4.Add(self.text_ctrl_1, 0, 0, 0)
+        label_2 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_2")
+        grid_sizer_4.Add(label_2, 0, 0, 0)
+        grid_sizer_4.Add(self.text_ctrl_2, 0, 0, 0)
+        label_3 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_3")
+        grid_sizer_4.Add(label_3, 0, 0, 0)
+        grid_sizer_4.Add(self.spin_ctrl_1, 0, 0, 0)
+        label_1 = wx.StaticText(self.panel_1, wx.ID_ANY, "label_1")
+        grid_sizer_4.Add(label_1, 0, 0, 0)
+        grid_sizer_4.Add(self.property_grid_1, 1, wx.EXPAND, 0)
+        grid_sizer_4.Add(self.list_ctrl_1, 1, wx.EXPAND, 0)
+        self.panel_1.SetSizer(grid_sizer_4)
         sizer_1.Add(self.panel_1, 1, wx.EXPAND, 0)
         self.SetSizer(sizer_1)
         self.Layout()

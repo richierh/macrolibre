@@ -4,19 +4,18 @@ import wx
 import AppsSDS.sds as sds
 import AppsSDS.db.db as connectdb
 
-
 connectdb.createdatabasename()
 
+
 # Implementing WindowUtama
-class SDSHollandWindowUtama( sds.WindowUtama ):
+class SDSHollandWindowUtama(sds.WindowUtama):
 	"""ljsdfalsdf"""
 	
-	def __init__( self, parent ):
-		sds.WindowUtama.__init__( self, parent )
-
+	def __init__(self, parent):
+		sds.WindowUtama.__init__(self, parent)
 
 	# Handlers for WindowUtama events.
-	def btn_Close( self, event ):
+	def btn_Close(self, event):
 		# TODO: Implement btn_Close
 	
 		print ("Tutup Aplikasi")
@@ -26,12 +25,11 @@ class SDSHollandWindowUtama( sds.WindowUtama ):
 	def btn_selanjutnya(self, event):
 	
 		# TODO: Implement btn_gotopage2
-		#from SDSHollandPage3 import SDSHollandPage3
-		#SDSHollandPage2(self)
+		# from SDSHollandPage3 import SDSHollandPage3
+		# SDSHollandPage2(self)
 		
-		for i in range(0,3):
+		for i in range(0, 3):
 			print (i)
-		
 
 		self.m_panel101.Hide()
 		self.m_panel6.Hide()
@@ -39,25 +37,26 @@ class SDSHollandWindowUtama( sds.WindowUtama ):
 		self.m_button1.Enable()
 		self.m_button3.Enable()
 		
-		#SDSHollandPage3(self)
+		# SDSHollandPage3(self)
 		self.Layout()
 
 		pass
-	def m_btn_tutupaplikasi(self,event):
+
+	def m_btn_tutupaplikasi(self, event):
 		
-		#dlg = wx.MessageDialog(self,"title","Apakah anda ingin menyimpan",\
-		#					style=wx.OK|wx.CANCEL)
-		#dlg.SetOKCancelLabels("iya", "tidak")
-		#val = dlg.ShowModal()
+		# dlg = wx.MessageDialog(self,"title","Apakah anda ingin menyimpan",\
+		# 					style=wx.OK|wx.CANCEL)
+		# dlg.SetOKCancelLabels("iya", "tidak")
+		# val = dlg.ShowModal()
 		import AppsSDS.messagebox as msgdlg
-		self.getid = msgdlg.MessBx(None,"",style=wx.OK|wx.CANCEL)
+		self.getid = msgdlg.MessBx(None, "", style=wx.OK | wx.CANCEL)
 		val = self.getid.getiddestroy()
-		#print (getid.getiddestroy())
-		if val ==wx.ID_OK:
+		# print (getid.getiddestroy())
+		if val == wx.ID_OK:
 			print ("okay")
 			self.Close()
 			
-		elif val==wx.ID_CANCEL:
+		elif val == wx.ID_CANCEL:
 			"""Membatalkan cancel"""
 			pass
 		
@@ -81,5 +80,4 @@ class SDSHollandWindowUtama( sds.WindowUtama ):
 		self.m_panel8.Hide()
 		self.Layout()
 		pass
-	
 

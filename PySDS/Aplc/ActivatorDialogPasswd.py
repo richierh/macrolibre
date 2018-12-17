@@ -2,13 +2,15 @@
 
 import Aplc.Activator as Activator
 
+
 # Implementing DialogPasswd
-class ActivatorDialogPasswd( Activator.DialogPasswd ):
-	def __init__( self, parent ):
-		Activator.DialogPasswd.__init__( self, parent )
+class ActivatorDialogPasswd(Activator.DialogPasswd):
+
+	def __init__(self, parent):
+		Activator.DialogPasswd.__init__(self, parent)
 
 	# Handlers for DialogPasswd events.
-	def btn_passwd( self, event ):
+	def btn_passwd(self, event):
 		# TODO: Implement btn_passwd
 		from Aplc.aktifread import csvfile
 		self.read = csvfile()
@@ -25,10 +27,8 @@ class ActivatorDialogPasswd( Activator.DialogPasswd ):
 			self.opendialog = ac(self)
 			self.opendialog.Show()
 			self.Close()
-			
 
 		else :
 			print ("keluar")
 			self.Close()
-
 

@@ -8,8 +8,6 @@ class csvfile():
 	def __init__(self):
 		self.file = 'tk.py'
 		pass
-	
-	
 		
 	def read(self):
 		with open("tk.py", 'r') as csvfile:
@@ -20,7 +18,7 @@ class csvfile():
 		return l
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
 	k = csvfile()
 	k.read()
 			

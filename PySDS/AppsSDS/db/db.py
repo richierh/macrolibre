@@ -1,25 +1,28 @@
 #!/usr/bin/python
 import sqlite3
+import os
 
 
-
-def create_connection(db_file):
+def create_connection(db_file):#db_file):
     try:
+        #db_file="db.db"
         conn = sqlite3.connect(db_file)            
-        print ("connect")
+        print ("conneffct")
         return conn
 
-    except Error as e:
+    except Exception as e:
+        print ("dd")
         print(e)
  
     return None
+
  
 def close(conn):
     conn.close()
     print ("Great udah diputus")
 
 
-def create_table(conn,create_table_sql):
+def create_table(conn, create_table_sql):
     c = conn.cursor()
     c.execute(create_table_sql)
 
@@ -42,6 +45,8 @@ def main(db):
     `eksul`    text,
     PRIMARY KEY(`idpersonft`)
 );"""
+
+
     sql_create_table2 = """
 CREATE TABLE IF NOT EXISTS `personfs` (
     `idpersonfs`    int,
@@ -57,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `personfs` (
     `posisiorjabatan`    text,
     PRIMARY KEY(`idpersonfs`)
 );"""
-    sql_create_table3 ="""CREATE TABLE IF NOT EXISTS `kuncijawaban`(
+    sql_create_table3 = """CREATE TABLE IF NOT EXISTS `kuncijawaban`(
                             `idkuncijawaban`    int,
                             `personfsid`    int,
                             `personftid`    int,
@@ -75,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `personfs` (
        
         create_table(conn, sql_create_table2)
         
-        create_table(conn,sql_create_table3)
+        create_table(conn, sql_create_table3)
     else:
         print("Error! cannot create the database connection.")
     
@@ -84,20 +89,54 @@ CREATE TABLE IF NOT EXISTS `personfs` (
 
     
 def createdatabasename():
-    namadatabase = "db/riasec"
+    namadatabase = "riasec"
+    print (os.getcwd())
+    db_file="db.db"
+    create_connection(db_file)
     main(namadatabase)
 
 
-
+# createdatabasename()
+    
 class dataprocess():
     
     def __init___(self):
         
-        
-        
         pass
-    
     
     def __method__(self):
         pass
 
+
+
+class CreateDatabaseName():
+    
+    
+    def __init__(self):
+        self.database = []
+        self.listfile = os.listdir(os.getcwd())
+        print (self.listfile)
+           
+    
+    def inputnamedatabase(self,adding):
+        self.adding = adding
+#         self.database.append(adding)
+        for listf in self.listfile:
+            print (listf)
+            if listf != self.adding:
+                print ("tidak sama")
+                self.database.append(listf)
+#                 return self.database.append(adding)
+            else :
+                print ("data sudah ada")
+                
+                break
+        return self.database.append(self.adding)
+                
+
+
+k = CreateDatabaseName()
+k.inputnamedatabase("db.db")
+    
+print (k.database)
+    

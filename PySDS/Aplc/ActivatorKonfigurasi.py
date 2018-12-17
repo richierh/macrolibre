@@ -2,19 +2,21 @@
 
 import Aplc.Activator as Activator
 
+
 # Implementing Konfigurasi
-class ActivatorKonfigurasi( Activator.Konfigurasi ):
-	def __init__( self, parent ):
-		Activator.Konfigurasi.__init__( self, parent )
+class ActivatorKonfigurasi(Activator.Konfigurasi):
+
+	def __init__(self, parent):
+		Activator.Konfigurasi.__init__(self, parent)
 
 	# Handlers for Konfigurasi events.
-	def btn_lanjut( self, event ):
+	def btn_lanjut(self, event):
 		# TODO: Implement btn_lanjut
 		self.Close()
 
 		pass
 
-	def btn_cancel( self, event ):
+	def btn_cancel(self, event):
 		# TODO: Implement btn_cancel
 		self.Close()
 		
@@ -23,6 +25,7 @@ class ActivatorKonfigurasi( Activator.Konfigurasi ):
 	def btn_aktifkan(self, event):
 		
 		pass
+
 	def btn_non_aktifkan(self, event):
 		pass
 	

@@ -3,16 +3,17 @@
 import wx
 import sds
 
+
 # Implementing Page3
-class SDSHollandPage3( sds.Page3 ):
-	def __init__( self, parent ):
-		sds.Page3.__init__( self, parent )
+class SDSHollandPage3(sds.Page3):
+
+	def __init__(self, parent):
+		sds.Page3.__init__(self, parent)
 
 	# Handlers for Page3 events.
-	def m_scrollBar1OnScroll( self, event ):
+	def m_scrollBar1OnScroll(self, event):
 		# TODO: Implement m_scrollBar1OnScroll
 
 		print("tes")
 		pass
-
 
