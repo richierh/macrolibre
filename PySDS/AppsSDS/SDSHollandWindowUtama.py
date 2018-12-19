@@ -27,17 +27,38 @@ class SDSHollandWindowUtama(sds.WindowUtama):
 		# TODO: Implement btn_gotopage2
 		# from SDSHollandPage3 import SDSHollandPage3
 		# SDSHollandPage2(self)
+				
+		if self.halaman1.IsShown():
+			print ('halaman3')
+			self.m_panel101.Hide()
+			self.halaman1.Hide()
+			self.halaman2.Show()
+			self.m_button1.Enable()
+			self.m_button3.Enable()
 		
-		for i in range(0, 3):
-			print (i)
+		elif self.halaman2.IsShown() :
+			print ("halaman4")
+			self.halaman2.Hide()
+			self.halaman3.Show()
+		
+		elif self.halaman3.IsShown():
+			print("halaman5")
+			self.halaman3.Hide()
+			self.halaman4.Show()
+		
+		elif self.halaman4.IsShown():
+			print ("halaman6")
+			self.halaman4.Hide()
+			self.halaman5.Show()
+			
+		elif self.halaman6.IsShown():
+			print ("halaman7")
+			self.halaman6.Hide()
+# 			self.halaman7.Show()
+	
 
-		self.m_panel101.Hide()
-		self.m_panel6.Hide()
-		self.m_panel2.Show()
-		self.m_button1.Enable()
-		self.m_button3.Enable()
-		
 		# SDSHollandPage3(self)
+		self.Refresh()
 		self.Layout()
 
 		pass
