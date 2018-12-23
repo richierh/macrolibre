@@ -7,24 +7,26 @@ import Aplc.Activator as Activator
 class ActivatorDialogPasswd(Activator.DialogPasswd):
 
 	def __init__(self, parent):
-		Activator.DialogPasswd.__init__(self, parent)
-
+		Activator.DialogPasswd.__init__(self,parent)
+		self.root = parent
+		self.root.Hide()
 	# Handlers for DialogPasswd events.
 	def btn_passwd(self, event):
 		# TODO: Implement btn_passwd
 		from Aplc.aktifread import csvfile
-		self.read = csvfile()
-		passwd = self.read.read()
-		print ("passwd")
-		self.act = Activator.IntiWindow(self)
 		self.txtctrl = self.m_textCtrl1
-		
-		self.passwd = self.txtctrl.GetValue()
-		print (self.passwd)		
-		if self.passwd == passwd :
+		self.passwdinput = self.txtctrl.GetValue()
+
+		self.file = csvfile("")
+		print (self.file.checkfile(self.passwdinput))
+# 		print ("passwd {}".format(self.passwd))
+# 		self.act = Activator.IntiWindow(self)
+		if self.file.checkfile(self.passwdinput) == True :
 			print ("default")
-			from Aplc.ActivatorKonfigurasi import ActivatorKonfigurasi as ac
-			self.opendialog = ac(self)
+			from Aplc.ActivatorKonfigurasi import ActivatorKonfigurasi as act
+# 			self.Login = Activator.IntiWindow(self)
+			self.Hide()
+			self.opendialog = act(self)
 			self.opendialog.Show()
 			self.Close()
 

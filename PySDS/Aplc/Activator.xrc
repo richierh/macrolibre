@@ -59,180 +59,246 @@
 	</object>
 	<object class="wxFrame" name="Konfigurasi">
 		<style>wxFRAME_NO_TASKBAR|wxSTAY_ON_TOP|wxTAB_TRAVERSAL</style>
-		<size>400,300</size>
+		<size>450,300</size>
 		<title>BinaKarir</title>
 		<centered>1</centered>
 		<aui_managed>0</aui_managed>
-		<object class="wxPanel" name="m_panel4">
-			<style>wxTAB_TRAVERSAL</style>
-			<object class="wxBoxSizer">
-				<orient>wxVERTICAL</orient>
-				<object class="sizeritem">
-					<option>0</option>
-					<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
-					<border>5</border>
-					<object class="wxStaticText" name="m_staticText1">
-						<font>
-							<size>16</size>
-							<family>swiss</family>
-							<style>normal</style>
-							<weight>normal</weight>
-							<underlined>0</underlined>
-							<face>Sans</face>
-						</font>
-						<label>Konfigurasi</label>
-						<wrap>-1</wrap>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxFlexGridSizer">
+					<rows>3</rows>
+					<cols>1</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>0</growablecols>
+					<growablerows>2</growablerows>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText1">
+							<font>
+								<size>16</size>
+								<family>swiss</family>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<face>Sans</face>
+							</font>
+							<label>Konfigurasi</label>
+							<wrap>-1</wrap>
+						</object>
 					</object>
-				</object>
-				<object class="sizeritem">
-					<option>1</option>
-					<flag>wxEXPAND | wxALL</flag>
-					<border>5</border>
-					<object class="wxPanel" name="m_panel5">
-						<style>wxTAB_TRAVERSAL</style>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxPanel" name="m_panel4">
+							<style>wxTAB_TRAVERSAL</style>
+							<object class="wxFlexGridSizer">
+								<rows>0</rows>
+								<cols>3</cols>
+								<vgap>0</vgap>
+								<hgap>0</hgap>
+								<growablecols>2</growablecols>
+								<growablerows></growablerows>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxPanel" name="m_panel5">
+										<style>wxTAB_TRAVERSAL</style>
+										<object class="wxFlexGridSizer">
+											<rows>0</rows>
+											<cols>3</cols>
+											<vgap>0</vgap>
+											<hgap>0</hgap>
+											<growablecols>1,2</growablecols>
+											<growablerows></growablerows>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<object class="wxStaticText" name="m_staticText5">
+													<label>Batas Tanggal Aktif</label>
+													<wrap>-1</wrap>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALL|wxEXPAND</flag>
+												<border>5</border>
+												<object class="wxDatePickerCtrl" name="m_datePicker1">
+													<style>wxDP_DEFAULT</style>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>1</option>
+												<flag>wxEXPAND</flag>
+												<border>5</border>
+												<object class="wxFlexGridSizer">
+													<rows>0</rows>
+													<cols>2</cols>
+													<vgap>0</vgap>
+													<hgap>0</hgap>
+													<growablecols>1</growablecols>
+													<growablerows>0</growablerows>
+													<object class="sizeritem">
+														<option>0</option>
+														<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+														<border>5</border>
+														<object class="wxStaticText" name="m_staticText51">
+															<label>Tanggal Aktif :</label>
+															<wrap>-1</wrap>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<option>0</option>
+														<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+														<border>5</border>
+														<object class="wxStaticText" name="tanggal_aktif">
+															<label>tanggal__aktif</label>
+															<wrap>-1</wrap>
+														</object>
+													</object>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<object class="wxStaticText" name="m_staticText3">
+													<pos>-1,-1</pos>
+													<label>Password</label>
+													<wrap>-1</wrap>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>1</option>
+												<flag>wxALL|wxEXPAND</flag>
+												<border>5</border>
+												<object class="wxStaticText" name="password">
+													<bg>#94f533</bg>
+													<label>Belum ada</label>
+													<wrap>-1</wrap>
+												</object>
+											</object>
+											<object class="spacer">
+												<option>1</option>
+												<flag>wxEXPAND</flag>
+												<border>5</border>
+												<size>0,0</size>
+											</object>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+												<border>5</border>
+												<object class="wxStaticText" name="m_staticText4">
+													<label>Ubah Password</label>
+													<wrap>-1</wrap>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALL|wxEXPAND</flag>
+												<border>5</border>
+												<object class="wxTextCtrl" name="ubah_password">
+													<value></value>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<option>0</option>
+												<flag>wxALL</flag>
+												<border>5</border>
+												<object class="wxButton" name="Ubah">
+													<label>Ubah</label>
+													<default>0</default>
+													<markup>0</markup>
+													<bitmap />
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
 						<object class="wxFlexGridSizer">
-							<rows>0</rows>
+							<rows>1</rows>
 							<cols>3</cols>
 							<vgap>0</vgap>
 							<hgap>0</hgap>
-							<growablecols>1</growablecols>
-							<growablerows></growablerows>
+							<growablecols>2</growablecols>
+							<growablerows>0</growablerows>
 							<object class="sizeritem">
 								<option>0</option>
-								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
-								<object class="wxStaticText" name="m_staticText5">
-									<label>Batas Tanggal Aktif</label>
-									<wrap>-1</wrap>
-								</object>
-							</object>
-							<object class="sizeritem">
-								<option>0</option>
-								<flag>wxALL</flag>
-								<border>5</border>
-								<object class="wxDatePickerCtrl" name="m_datePicker1">
-									<style>wxDP_DEFAULT</style>
-								</object>
-							</object>
-							<object class="sizeritem">
-								<option>0</option>
-								<flag>wxALIGN_CENTER_VERTICAL|wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
-								<border>5</border>
-								<object class="wxStaticText" name="m_staticText51">
-									<size>125,-1</size>
-									<label>Tanggal Aktif SD</label>
-									<wrap>-1</wrap>
-								</object>
-							</object>
-							<object class="sizeritem">
-								<option>0</option>
-								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
-								<border>5</border>
-								<object class="wxStaticText" name="m_staticText3">
-									<pos>-1,-1</pos>
-									<label>Password</label>
-									<wrap>-1</wrap>
-								</object>
-							</object>
-							<object class="sizeritem">
-								<option>1</option>
-								<flag>wxALL|wxEXPAND</flag>
-								<border>5</border>
-								<object class="wxTextCtrl" name="m_textCtrl3">
-									<value></value>
-								</object>
-							</object>
-							<object class="spacer">
-								<option>1</option>
-								<flag>wxEXPAND</flag>
-								<border>5</border>
-								<size>0,0</size>
-							</object>
-							<object class="sizeritem">
-								<option>0</option>
-								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
-								<border>5</border>
-								<object class="wxStaticText" name="m_staticText4">
-									<label>Ubah Password</label>
-									<wrap>-1</wrap>
-								</object>
-							</object>
-							<object class="sizeritem">
-								<option>0</option>
-								<flag>wxALL|wxEXPAND</flag>
-								<border>5</border>
-								<object class="wxTextCtrl" name="m_textCtrl5">
-									<value></value>
-								</object>
-							</object>
-							<object class="sizeritem">
-								<option>0</option>
-								<flag>wxALL|wxALIGN_RIGHT</flag>
-								<border>5</border>
-								<object class="wxButton" name="m_button61">
-									<label>Ubah</label>
+								<object class="wxButton" name="m_button6">
+									<label>Non Aktifkan</label>
 									<default>0</default>
 									<markup>0</markup>
 									<bitmap />
 								</object>
 							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+								<border>5</border>
+								<object class="wxButton" name="m_button7">
+									<label>Aktifkan</label>
+									<default>0</default>
+									<markup>0</markup>
+									<bitmap />
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+								<border>5</border>
+								<object class="wxStaticText" name="m_staticText8">
+									<bg>#15b615</bg>
+									<font>
+										<size>26</size>
+										<family>swiss</family>
+										<style>normal</style>
+										<weight>normal</weight>
+										<underlined>0</underlined>
+										<face>Sans</face>
+									</font>
+									<label>DisAktif</label>
+									<wrap>-1</wrap>
+								</object>
+							</object>
 						</object>
 					</object>
 				</object>
-				<object class="sizeritem">
-					<option>0</option>
-					<flag>wxALIGN_CENTER_HORIZONTAL|wxEXPAND</flag>
-					<border>5</border>
-					<object class="wxBoxSizer">
-						<orient>wxHORIZONTAL</orient>
-						<object class="sizeritem">
-							<option>0</option>
-							<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
-							<border>5</border>
-							<object class="wxButton" name="m_button6">
-								<label>Non Aktifkan</label>
-								<default>0</default>
-								<markup>0</markup>
-								<bitmap />
-							</object>
-						</object>
-						<object class="sizeritem">
-							<option>0</option>
-							<flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
-							<border>5</border>
-							<object class="wxButton" name="m_button7">
-								<label>Aktifkan</label>
-								<default>0</default>
-								<markup>0</markup>
-								<bitmap />
-							</object>
-						</object>
-						<object class="spacer">
-							<option>1</option>
-							<flag></flag>
-							<border>5</border>
-							<size>150,0</size>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStdDialogButtonSizer">
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
 						</object>
 					</object>
-				</object>
-				<object class="sizeritem">
-					<option>0</option>
-					<flag>wxEXPAND</flag>
-					<border>5</border>
-					<object class="wxStdDialogButtonSizer">
-						<object class="button">
-							<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
-							<border>5</border>
-							<object class="wxButton" name="wxID_OK">
-								<label>&amp;OK</label>
-							</object>
-						</object>
-						<object class="button">
-							<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
-							<border>5</border>
-							<object class="wxButton" name="wxID_CANCEL">
-								<label>&amp;Cancel</label>
-							</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
 						</object>
 					</object>
 				</object>

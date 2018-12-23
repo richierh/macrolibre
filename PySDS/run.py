@@ -1,19 +1,25 @@
 #!usr/bin/env python
-import os
-import sys
 """
 from oscheck import *
 import wx
 """
 
-path = "{}{}".format(os.getcwd(),"/AppsSDS")
+import os
+import sys
+
+path = "{}{}".format(os.getcwd(), "/AppsSDS")
 sys.path.append(path)
 sys.path
+# print (sys.path)
 os.getcwd()
-cd = "{}{}".format(os.getcwd(),"/AppsSDS")
+cd = "{}{}".format(os.getcwd(), "/AppsSDS")
 os.chdir(cd)
 
-from AppsSDS.main import run
+import AppsSDS.main as run
 
-Runapps = run(None)
-#menjalankan aplikasi
+# runapps = run.run(None)
+#import run
+
+
+# Runapps = run(None)
+# menjalankan aplikasi

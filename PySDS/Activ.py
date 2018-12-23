@@ -10,5 +10,3 @@ cd = "{}{}".format(os.getcwd(), "/Aplc")
 os.chdir(cd)
 
 from Aplc.main import run
-
-Run = run(None)

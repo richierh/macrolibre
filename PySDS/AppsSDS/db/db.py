@@ -1,11 +1,11 @@
 #!/usr/bin/python
-import sqlite3
 import os
+import sqlite3
 
 
-def create_connection(db_file):#db_file):
+def create_connection(db_file):  # db_file):
     try:
-        #db_file="db.db"
+        # db_file="db.db"
         conn = sqlite3.connect(db_file)            
         print ("conneffct")
         return conn
@@ -45,7 +45,6 @@ def main(db):
     `eksul`    text,
     PRIMARY KEY(`idpersonft`)
 );"""
-
 
     sql_create_table2 = """
 CREATE TABLE IF NOT EXISTS `personfs` (
@@ -91,12 +90,12 @@ CREATE TABLE IF NOT EXISTS `personfs` (
 def createdatabasename():
     namadatabase = "riasec"
     print (os.getcwd())
-    db_file="db.db"
+    db_file = "db.db"
     create_connection(db_file)
     main(namadatabase)
 
-
 # createdatabasename()
+
     
 class dataprocess():
     
@@ -108,17 +107,14 @@ class dataprocess():
         pass
 
 
-
 class CreateDatabaseName():
-    
     
     def __init__(self):
         self.database = []
         self.listfile = os.listdir(os.getcwd())
         print (self.listfile)
-           
     
-    def inputnamedatabase(self,adding):
+    def inputnamedatabase(self, adding):
         self.adding = adding
 #         self.database.append(adding)
         for listf in self.listfile:
@@ -132,7 +128,6 @@ class CreateDatabaseName():
                 
                 break
         return self.database.append(self.adding)
-                
 
 
 k = CreateDatabaseName()

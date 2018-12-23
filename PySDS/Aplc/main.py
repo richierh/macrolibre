@@ -1,8 +1,9 @@
 #!usr/bin/env python
 
 import wx
-from Aplc.ActivatorIntiWindow import ActivatorIntiWindow as I
+
 from Aplc.ActivatorDialogPasswd import ActivatorDialogPasswd as D
+from Aplc.ActivatorIntiWindow import ActivatorIntiWindow as I
 
 
 class run(I, D):

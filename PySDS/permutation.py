@@ -1,6 +1,5 @@
-import itertools
-
 import csv
+import itertools
 
 
 class CustomPermutation(itertools.permutations):
@@ -11,6 +10,7 @@ class CustomPermutation(itertools.permutations):
         self.__method()
         self.permutation = itertools.permutations(self.objectoflist)
         self.readpermutation()
+
     def __method(self):
         self.objectoflist = []
         for i in self.result.upper():

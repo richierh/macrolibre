@@ -29,7 +29,7 @@
 								<flag>wxALL</flag>
 								<border>5</border>
 								<object class="wxRadioButton" name="m_radioBtn1">
-									<label>Tes Seleksi</label>
+									<label>Form Seleksi</label>
 									<value>0</value>
 								</object>
 							</object>
@@ -38,7 +38,7 @@
 								<flag>wxALL</flag>
 								<border>5</border>
 								<object class="wxRadioButton" name="m_radioBtn2">
-									<label>Tes</label>
+									<label>Form Tes</label>
 									<value>0</value>
 								</object>
 							</object>
@@ -58,10 +58,10 @@
 							<vgap>0</vgap>
 							<hgap>0</hgap>
 							<growablecols>0,1,2</growablecols>
-							<growablerows></growablerows>
+							<growablerows>0</growablerows>
 							<object class="sizeritem">
 								<option>1</option>
-								<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<object class="wxPanel" name="m_panel7">
 									<style>wxTAB_TRAVERSAL</style>
@@ -71,7 +71,7 @@
 										<vgap>0</vgap>
 										<hgap>0</hgap>
 										<growablecols>1</growablecols>
-										<growablerows>0,1,2,3,4,5,6,7,8,9</growablerows>
+										<growablerows></growablerows>
 										<object class="sizeritem">
 											<option>0</option>
 											<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
@@ -83,7 +83,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="no_tes_input">
 												<size>200,-1</size>
@@ -118,7 +118,7 @@
 											</object>
 										</object>
 										<object class="sizeritem">
-											<option>1</option>
+											<option>0</option>
 											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="nama_kandidat_input">
@@ -140,7 +140,7 @@
 											<flag>wxALL</flag>
 											<border>5</border>
 											<object class="wxChoice" name="jenis_kelamin_input">
-												<selection>0</selection>
+												<selection>1</selection>
 												<content>
 													<item>Laki-Laki</item>
 													<item>Perempuan</item>
@@ -149,7 +149,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL</flag>
 											<border>5</border>
 											<object class="wxStaticText" name="tanggal_lahir">
 												<label>Tanggal Lahir</label>
@@ -167,7 +167,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL</flag>
 											<border>5</border>
 											<object class="wxStaticText" name="pendidikan_terakhir">
 												<label>Pendidikan Terakhir</label>
@@ -179,7 +179,7 @@
 											<flag>wxALL</flag>
 											<border>5</border>
 											<object class="wxChoice" name="pendidikan_terakhir_input">
-												<selection>0</selection>
+												<selection>2</selection>
 												<content>
 													<item>SD</item>
 													<item>SMP</item>
@@ -201,7 +201,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="jurusan_input">
 												<value></value>
@@ -218,7 +218,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="kota_input">
 												<value></value>
@@ -235,7 +235,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="perusahaan_instansi_input">
 												<value></value>
@@ -252,7 +252,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="posisi_jabatan_input">
 												<value></value>
@@ -325,7 +325,7 @@
 											<flag>wxALL</flag>
 											<border>5</border>
 											<object class="wxChoice" name="jenis_kelamin_input2">
-												<selection>0</selection>
+												<selection>1</selection>
 												<content>
 													<item>Laki-Laki</item>
 													<item>Perempuan</item>
@@ -361,7 +361,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="asal_sekolah_input2">
 												<value></value>
@@ -378,7 +378,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="jurusan_input2">
 												<value></value>
@@ -395,7 +395,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="asal_universitas_input2">
 												<value></value>
@@ -412,7 +412,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="jurusan_input2">
 												<value></value>
@@ -429,7 +429,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="kota_input2">
 												<value></value>
@@ -446,7 +446,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="hobi_input2">
 												<style>wxTE_MULTILINE</style>
@@ -464,7 +464,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="prestasi_akademik_input2">
 												<style>wxTE_MULTILINE</style>
@@ -482,7 +482,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="prestasi_non_akademik_input2">
 												<style>wxTE_MULTILINE</style>
@@ -500,7 +500,7 @@
 										</object>
 										<object class="sizeritem">
 											<option>0</option>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<object class="wxTextCtrl" name="ekskul_yang_diikuti_input2">
 												<style>wxTE_MULTILINE</style>
@@ -524,7 +524,7 @@
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<object class="wxStaticBitmap" name="m_bitmap3">
-												<bitmap>Aplc/img/binakarir.png</bitmap>
+												<bitmap>AppsSDS/images/binakarir.png</bitmap>
 											</object>
 										</object>
 									</object>
@@ -769,6 +769,10 @@
 			</object>
 		</object>
 	</object>
+	<object class="wxPanel" name="MyPanel10">
+		<style>wxTAB_TRAVERSAL</style>
+		<size>500,300</size>
+	</object>
 	<object class="wxPanel" name="Page6">
 		<style>wxTAB_TRAVERSAL</style>
 		<size>500,300</size>
@@ -821,9 +825,9 @@
 			</object>
 		</object>
 	</object>
-	<object class="wxPanel" name="Page2" subclass="listof">
+	<object class="wxPanel" name="Page2copy">
 		<style>wxTAB_TRAVERSAL</style>
-		<size>594,300</size>
+		<size>500,300</size>
 		<object class="wxBoxSizer">
 			<orient>wxVERTICAL</orient>
 			<object class="sizeritem">
@@ -836,20 +840,12 @@
 				</object>
 			</object>
 			<object class="sizeritem">
-				<option>0</option>
-				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
-				<border>5</border>
-				<object class="wxSearchCtrl" name="m_searchCtrl3">
-					<value></value>
-				</object>
-			</object>
-			<object class="sizeritem">
 				<option>1</option>
 				<flag>wxEXPAND</flag>
 				<border>5</border>
 				<object class="wxFlexGridSizer">
 					<rows>0</rows>
-					<cols>3</cols>
+					<cols>4</cols>
 					<vgap>0</vgap>
 					<hgap>0</hgap>
 					<growablecols>1</growablecols>
@@ -865,17 +861,26 @@
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
 						<object class="wxTextCtrl" name="m_textCtrl7">
-							<size>500,-1</size>
-							<hidden>1</hidden>
 							<value></value>
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxButton" name="openlistbox1">
+							<label>Cari</label>
+							<default>0</default>
+							<markup>0</markup>
+							<bitmap />
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
 						<object class="wxStaticText" name="label_event">
 							<label>MyLabel</label>
@@ -893,17 +898,26 @@
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
 						<object class="wxTextCtrl" name="m_textCtrl6">
-							<size>500,-1</size>
-							<hidden>1</hidden>
 							<value></value>
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxButton" name="openlistbox2">
+							<label>Cari</label>
+							<default>0</default>
+							<markup>0</markup>
+							<bitmap />
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
 						<object class="wxStaticText" name="m_staticText131">
 							<label>MyLabel</label>
@@ -920,18 +934,27 @@
 						</object>
 					</object>
 					<object class="sizeritem">
-						<option>1</option>
-						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<option>0</option>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
-						<object class="wxSearchCtrl" name="m_searchCtrl2">
-							<style>wxTE_PROCESS_ENTER|wxTE_PROCESS_TAB</style>
-							<hidden>1</hidden>
-							<value>Hobi anda</value>
+						<object class="wxTextCtrl" name="m_textCtrl21">
+							<value></value>
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxButton" name="openlistbox3">
+							<label>Cari</label>
+							<default>0</default>
+							<markup>0</markup>
+							<bitmap />
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
 						<object class="wxStaticText" name="m_staticText133">
 							<label>MyLabel</label>
@@ -949,29 +972,26 @@
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
-						<object class="wxComboBox" name="m_comboBox1">
-							<style>wxCB_DROPDOWN</style>
-							<hidden>1</hidden>
-							<value>d</value>
-							<content>
-								<item>a</item>
-								<item>d</item>
-								<item>g</item>
-								<item>h</item>
-								<item>j</item>
-								<item>k</item>
-								<item>l</item>
-								<item>;</item>
-								<item>t</item>
-								<item></item>
-							</content>
+						<object class="wxTextCtrl" name="m_textCtrl20">
+							<value></value>
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxButton" name="openlistbox4">
+							<label>Cari</label>
+							<default>0</default>
+							<markup>0</markup>
+							<bitmap />
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
 						<object class="wxStaticText" name="m_staticText137">
 							<label>MyLabel</label>
@@ -989,15 +1009,26 @@
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
-						<object class="wxListBox" name="m_listBox3">
-							<content />
+						<object class="wxTextCtrl" name="m_textCtrl19">
+							<value></value>
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxButton" name="openlistbox5">
+							<label>Cari</label>
+							<default>0</default>
+							<markup>0</markup>
+							<bitmap />
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
 						<object class="wxStaticText" name="m_staticText1381">
 							<label>MyLabel</label>
@@ -1006,7 +1037,7 @@
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
 						<object class="wxStaticText" name="m_staticText139">
 							<label>6</label>
@@ -1015,57 +1046,28 @@
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
-						<object class="wxStaticText" name="m_staticText140">
-							<hidden>1</hidden>
-							<label>MyLabel</label>
-							<wrap>-1</wrap>
+						<object class="wxTextCtrl" name="m_textCtrl22">
+							<value></value>
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
-						<flag>wxALL</flag>
+						<flag>wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL</flag>
 						<border>5</border>
-						<object class="wxStaticText" name="m_staticText141">
-							<label>MyLabel</label>
-							<wrap>-1</wrap>
+						<object class="wxButton" name="openlistbox6">
+							<label>Cari</label>
+							<default>0</default>
+							<markup>0</markup>
+							<bitmap />
 						</object>
 					</object>
 					<object class="sizeritem">
 						<option>0</option>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
-						<object class="wxStaticText" name="m_staticText142">
-							<label>7</label>
-							<wrap>-1</wrap>
-						</object>
-					</object>
-					<object class="sizeritem">
-						<option>0</option>
-						<flag>wxALL</flag>
-						<border>5</border>
-						<object class="wxStaticText" name="m_staticText144">
-							<hidden>1</hidden>
-							<label>MyLabel</label>
-							<wrap>-1</wrap>
-						</object>
-					</object>
-					<object class="sizeritem">
-						<option>0</option>
-						<flag>wxALL</flag>
-						<border>5</border>
-						<object class="wxStaticText" name="m_staticText145">
-							<label>MyLabel</label>
-							<wrap>-1</wrap>
-						</object>
-					</object>
-					<object class="sizeritem">
-						<option>0</option>
-						<flag>wxALL</flag>
-						<border>5</border>
-						<object class="wxStaticText" name="m_staticText143">
-							<hidden>1</hidden>
+						<object class="wxStaticText" name="m_staticText140">
 							<label>MyLabel</label>
 							<wrap>-1</wrap>
 						</object>
